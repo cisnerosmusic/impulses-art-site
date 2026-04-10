@@ -200,7 +200,7 @@ Team attribution and project information.
 ## Contact & Social
 
 ### Direct Contact
-- **Email:** info@impulses.online / ernestocisnerosmusic@gmail.com
+- **Email:** ernest@ernestocisneros.art / ernestocisnerosmusic@gmail.com
 - **Phone:** +1-786-816-9791
 
 ### Social Media

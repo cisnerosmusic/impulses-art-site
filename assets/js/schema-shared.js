@@ -21,7 +21,7 @@
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+1-786-816-9791",
-        "email": "info@impulses.online",
+        "email": "ernest@ernestocisneros.art",
         "contactType": "customer service",
         "availableLanguage": ["English", "Spanish"]
       },
