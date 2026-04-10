@@ -273,18 +273,30 @@ canvas {
 
   var audioCtx, analyser, dataArray, source, connected = false;
   var isPlaying = false;
+  var sampleRate = 44100;
+
+  // Frequency band indices (computed after audioCtx init)
+  var lowStart, lowEnd, highStart, highEnd;
 
   function initAudioContext() {
     if (connected) return;
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    sampleRate = audioCtx.sampleRate;
     analyser = audioCtx.createAnalyser();
-    analyser.fftSize = 256;
-    analyser.smoothingTimeConstant = 0.85;
+    analyser.fftSize = 1024;  // 512 bins → ~86Hz per bin at 44.1kHz
+    analyser.smoothingTimeConstant = 0.82;
     dataArray = new Uint8Array(analyser.frequencyBinCount);
     source = audioCtx.createMediaElementSource(audio);
     source.connect(analyser);
     analyser.connect(audioCtx.destination);
     connected = true;
+
+    // Calculate bin ranges
+    var binHz = sampleRate / analyser.fftSize;
+    lowStart = Math.floor(40 / binHz);     // ~40 Hz
+    lowEnd = Math.ceil(450 / binHz);       // ~450 Hz
+    highStart = Math.floor(2000 / binHz);  // ~2 kHz
+    highEnd = Math.ceil(10000 / binHz);    // ~10 kHz
   }
 
   function loadTrack(index) {
@@ -501,33 +513,47 @@ canvas {
     ctx.fillStyle = 'rgba(10, 12, 31, 0.15)';
     ctx.fillRect(0, 0, W, H);
 
-    // Get audio energy
-    var energy = 0;
+    // Get frequency-separated energy
+    var eLow = 0, eHigh = 0;
     if (analyser && isPlaying) {
       analyser.getByteFrequencyData(dataArray);
-      var sum = 0;
-      for (var i = 0; i < dataArray.length; i++) sum += dataArray[i];
-      energy = (sum / dataArray.length) / 255;
+
+      // Low band: 40–450 Hz → rings, glow, tendrils (body of piano)
+      var sumLow = 0, countLow = 0;
+      for (var i = lowStart; i <= lowEnd && i < dataArray.length; i++) {
+        sumLow += dataArray[i]; countLow++;
+      }
+      eLow = countLow > 0 ? (sumLow / countLow) / 255 : 0;
+
+      // High band: 2–10 kHz → particles, connections (attack, harmonics)
+      var sumHigh = 0, countHigh = 0;
+      for (var i = highStart; i <= highEnd && i < dataArray.length; i++) {
+        sumHigh += dataArray[i]; countHigh++;
+      }
+      eHigh = countHigh > 0 ? (sumHigh / countHigh) / 255 : 0;
     }
 
-    // Even when not playing, gentle ambient animation
-    var ambientEnergy = Math.sin(t * 0.0005) * 0.05 + 0.05;
-    var e = Math.max(energy, ambientEnergy);
+    // Ambient animation when not playing
+    var ambLow = Math.sin(t * 0.0004) * 0.05 + 0.06;
+    var ambHigh = Math.sin(t * 0.0007 + 1.5) * 0.04 + 0.04;
+    var low = Math.max(eLow, ambLow);
+    var high = Math.max(eHigh, ambHigh);
 
-    // Draw layers
-    drawGlow(e);
-    drawTendrils(t, e);
+    // Draw layers — low frequencies drive rings/glow/tendrils
+    drawGlow(low);
+    drawTendrils(t, low);
 
     for (var r = 0; r < orbRings.length; r++) {
-      orbRings[r].draw(t, e);
+      orbRings[r].draw(t, low);
     }
 
+    // High frequencies drive particles and connections
     for (var p = 0; p < particles.length; p++) {
-      particles[p].update(t, e);
-      particles[p].draw(e);
+      particles[p].update(t, high);
+      particles[p].draw(high);
     }
 
-    drawConnections(e);
+    drawConnections(high);
   }
 
   // ── Start ──
