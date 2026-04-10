@@ -9,7 +9,7 @@ A professional music therapy platform combining live piano performance with scie
 
 ## About
 
-**IMPULSES.ART** is a music therapy initiative founded by **Ernesto Cisneros Cino**, a pianist, composer, educator, visual artist, and music therapist based in Miami, Florida.
+**IMPULSES.ART** is a music therapy initiative founded by **Ernesto Cisneros Cino**, a pianist, composer, educator, and visual artist based in Miami, Florida.
 
 The project bridges the intersection of clinical music therapy and creative performance, offering evidence-based therapeutic interventions through live piano music. IMPULSES.ART serves diverse communities, with specialized focus on supporting immigrant and refugee populations.
 
