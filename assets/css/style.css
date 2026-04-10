@@ -460,3 +460,23 @@ img { max-width: 100%; height: auto; display: block; }
 .placeholder-hands {
   background: url('../images/hands-light.jpg') center center / cover no-repeat;
 }
+
+/* ── Reveal animations (one-shot) ───────────── */
+.reveal {
+  opacity: 0;
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  will-change: opacity, transform;
+}
+
+.reveal-right {
+  transform: translateX(60px);
+}
+
+.reveal-left {
+  transform: translateX(-60px);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
