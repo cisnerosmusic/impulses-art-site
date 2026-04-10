@@ -168,6 +168,12 @@ img { max-width: 100%; height: auto; display: block; }
   height: 1px;
   background: var(--gold-dim);
   margin-bottom: 2rem;
+  animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% { width: 50px; opacity: 0.5; }
+  50% { width: 75px; opacity: 1; }
 }
 
 .section-text {
