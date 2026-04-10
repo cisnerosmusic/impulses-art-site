@@ -206,7 +206,7 @@ Team attribution and project information.
 ### Social Media
 - **X/Twitter:** [@Impulses_ART](https://x.com/Impulses_ART)
 - **Instagram:** [@impulses.art](https://instagram.com/impulses.art)
-- **LinkedIn:** [Ernesto Cisneros](https://linkedin.com/company/108934472)
+- **LinkedIn:** [Ernesto Cisneros](https://linkedin.com/company/impulses-art)
 - **YouTube:** [@ernestocisneros](https://youtube.com/@ernestocisneros)
 
 ---

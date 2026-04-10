@@ -28,7 +28,7 @@
       "sameAs": [
         "https://x.com/Impulses_ART",
         "https://instagram.com/impulses.art",
-        "https://linkedin.com/company/108934472",
+        "https://linkedin.com/company/impulses-art",
         "https://youtube.com/@ernestocisnerosmusic"
       ]
     },
@@ -49,7 +49,7 @@
         "https://ernestocisneros.art",
         "https://x.com/Impulses_ART",
         "https://instagram.com/impulses.art",
-        "https://linkedin.com/company/108934472",
+        "https://linkedin.com/company/impulses-art",
         "https://youtube.com/@ernestocisnerosmusic"
       ]
     },
