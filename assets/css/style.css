@@ -447,15 +447,15 @@ img { max-width: 100%; height: auto; display: block; }
   .faq-item { grid-template-columns: 40px 1fr; gap: 1rem; }
 }
 
-/* ── Image placeholders (until real photos are added) ── */
+/* ── Photo backgrounds ── */
 .placeholder-portrait {
-  background: linear-gradient(135deg, #1a1d4a 0%, #252860 50%, #0d0f2b 100%);
+  background: url('../images/portrait.jpg') center top / cover no-repeat;
 }
 
 .placeholder-piano {
-  background: linear-gradient(135deg, #0d0f2b 0%, #1a1d4a 50%, #0a0c1f 100%);
+  background: url('../images/hands-dark.jpg') center center / cover no-repeat;
 }
 
 .placeholder-hands {
-  background: linear-gradient(135deg, #252860 0%, #0d0f2b 100%);
+  background: url('../images/hands-light.jpg') center center / cover no-repeat;
 }
