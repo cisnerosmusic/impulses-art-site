@@ -187,7 +187,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 .split-image {
   background-size: cover;
-  background-position: center;
+  background-position: center top;
+  background-attachment: scroll;
   position: relative;
 }
 
@@ -449,7 +450,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ── Photo backgrounds ── */
 .placeholder-portrait {
-  background: url('../images/portrait.jpg') center top / cover no-repeat;
+  background: url('../images/portrait.jpg') center 15% / cover no-repeat;
 }
 
 .placeholder-piano {
