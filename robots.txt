@@ -1,0 +1,27 @@
+# robots.txt — impulses.online
+# IMPULSES.ART Professional Music Therapy Project
+# https://impulses.online
+
+User-agent: *
+Allow: /
+Disallow: /assets/
+Sitemap: https://impulses.online/sitemap.xml
+
+# AI crawlers — welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# LLM-readable site description
+# See also: https://impulses.online/llms.txt

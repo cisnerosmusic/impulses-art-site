@@ -1,0 +1,21 @@
+/* TEAM */
+
+Founder, Director, Content:
+  Ernesto Cisneros Cino
+  Pianist, Composer, Educator, Visual Artist
+  Miami, FL, USA
+  https://ernestocisneros.art
+
+/* SITE */
+
+Standards: HTML5, CSS3, ES6
+Software: Static site on GitHub Pages
+Design: Navy + gold, Cinzel / Cormorant Garamond / Space Mono
+Analytics: GoatCounter (privacy-friendly, no cookies)
+Domain: impulses.online
+Brand: IMPULSES.ART
+
+/* THANKS */
+
+Photography: Ernesto Cisneros Cino
+Built with care for immigrant and refugee communities.
