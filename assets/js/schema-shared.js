@@ -26,10 +26,10 @@
         "availableLanguage": ["English", "Spanish"]
       },
       "sameAs": [
-        "https://x.com/ImpulsesArt",
+        "https://x.com/Impulses_ART",
         "https://instagram.com/impulses.art",
-        "https://linkedin.com/in/ernestocisneros",
-        "https://youtube.com/@ernestocisneros"
+        "https://linkedin.com/company/108934472",
+        "https://youtube.com/@ernestocisnerosmusic"
       ]
     },
     {
@@ -47,10 +47,10 @@
       "worksFor": { "@id": "https://impulses.online/#organization" },
       "sameAs": [
         "https://ernestocisneros.art",
-        "https://x.com/ImpulsesArt",
+        "https://x.com/Impulses_ART",
         "https://instagram.com/impulses.art",
-        "https://linkedin.com/in/ernestocisneros",
-        "https://youtube.com/@ernestocisneros"
+        "https://linkedin.com/company/108934472",
+        "https://youtube.com/@ernestocisnerosmusic"
       ]
     },
     {

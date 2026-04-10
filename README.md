@@ -204,9 +204,9 @@ Team attribution and project information.
 - **Phone:** +1-786-816-9791
 
 ### Social Media
-- **X/Twitter:** [@ImpulsesArt](https://x.com/ImpulsesArt)
+- **X/Twitter:** [@Impulses_ART](https://x.com/Impulses_ART)
 - **Instagram:** [@impulses.art](https://instagram.com/impulses.art)
-- **LinkedIn:** [Ernesto Cisneros](https://linkedin.com/in/ernestocisneros)
+- **LinkedIn:** [Ernesto Cisneros](https://linkedin.com/company/108934472)
 - **YouTube:** [@ernestocisneros](https://youtube.com/@ernestocisneros)
 
 ---
