@@ -1,22 +1,47 @@
 // Shared structured data — loaded by all pages
 // Contains Organization, Person, and WebSite schemas
+// Version 2.0 — corrected April 2026
 (function () {
   var shared = [
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": ["Organization", "ProfessionalService"],
       "@id": "https://impulses.online/#organization",
       "name": "IMPULSES.ART",
       "alternateName": "IMPULSES ART Professional Music Therapy",
       "url": "https://impulses.online",
-      "logo": "https://impulses.online/assets/images/portrait.jpg",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://impulses.online/assets/images/portrait.jpg",
+        "width": 400,
+        "height": 400
+      },
       "description": "Professional music therapy project combining live piano performance with scientific approaches to healing. Supporting immigrant and refugee communities in the United States.",
       "founder": { "@id": "https://impulses.online/#person" },
-      "areaServed": {
-        "@type": "Country",
-        "name": "United States"
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Miami-Dade County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Broward County"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Music Therapy Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Individual Music Therapy" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Group Music Therapy" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Community Workshops" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Virtual Therapy Sessions" } }
+        ]
       },
-      "serviceType": ["Music Therapy", "Group Therapy", "Individual Therapy", "Community Workshops", "Virtual Therapy Sessions"],
       "knowsLanguage": ["en", "es"],
       "contactPoint": {
         "@type": "ContactPoint",
@@ -40,12 +65,18 @@
       "givenName": "Ernesto",
       "familyName": "Cisneros Cino",
       "url": "https://ernestocisneros.art",
-      "image": "https://impulses.online/assets/images/portrait.jpg",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://impulses.online/assets/images/portrait.jpg",
+        "width": 400,
+        "height": 400
+      },
       "jobTitle": ["Pianist", "Composer", "Educator", "Visual Artist", "Music Therapist"],
       "description": "Internationally experienced pianist, composer, educator, and visual artist. Founder and director of IMPULSES.ART professional music therapy project.",
       "knowsLanguage": ["en", "es"],
       "worksFor": { "@id": "https://impulses.online/#organization" },
       "sameAs": [
+        "https://orcid.org/0009-0002-2833-1787",
         "https://ernestocisneros.art",
         "https://x.com/Impulses_ART",
         "https://instagram.com/impulses.art",
@@ -61,10 +92,17 @@
       "url": "https://impulses.online",
       "publisher": { "@id": "https://impulses.online/#organization" },
       "inLanguage": "en",
-      "description": "Professional music therapy combining live piano performance with scientific approaches to healing."
+      "description": "Professional music therapy combining live piano performance with scientific approaches to healing.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://impulses.online/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     }
   ];
-
   shared.forEach(function (schema) {
     var script = document.createElement("script");
     script.type = "application/ld+json";
