@@ -338,7 +338,7 @@ canvas {
   var audio = new Audio();
   audio.crossOrigin = 'anonymous';
   audio.volume = 0.7;
-  audio.preload = 'auto';
+  audio.preload = 'none';  // nada se descarga hasta que el visitante pulse Play
 
   var audioCtx, analyser, dataArray, source, connected = false;
   var isPlaying = false;
@@ -659,6 +659,6 @@ canvas {
 </div>
 
 <script src="assets/js/schema-shared.js" defer></script>
-<script data-goatcounter="https://ernestocisnerosart.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://impulses.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

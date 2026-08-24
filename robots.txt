@@ -4,7 +4,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /assets/
 Sitemap: https://impulses.online/sitemap.xml
 
 # AI crawlers — welcome
