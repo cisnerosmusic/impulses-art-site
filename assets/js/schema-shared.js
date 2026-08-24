@@ -72,7 +72,7 @@
         "height": 400
       },
       "jobTitle": ["Pianist", "Composer", "Educator", "Visual Artist"],
-      "description": "Internationally experienced pianist, composer, educator, and visual artist. Founder and director of IMPULSES.ART professional music therapy project.",
+      "description": "Internationally experienced pianist, composer, educator, and visual artist. Founder and director of IMPULSES.ART, a therapeutic music project.",
       "knowsLanguage": ["en", "es"],
       "worksFor": { "@id": "https://impulses.online/#organization" },
       "sameAs": [
