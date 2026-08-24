@@ -1,5 +1,5 @@
 # robots.txt — impulses.online
-# IMPULSES.ART Professional Music Therapy Project
+# IMPULSES.ART Therapeutic Music Project
 # https://impulses.online
 
 User-agent: *

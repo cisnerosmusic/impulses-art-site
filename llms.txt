@@ -1,10 +1,10 @@
 # IMPULSES.ART
 
-> Professional music therapy project combining live piano performance with scientific approaches to healing. Supporting immigrant and refugee communities in the United States.
+> Therapeutic music project combining live piano performance with research-informed approaches to wellbeing. Supporting immigrant and refugee communities in the United States.
 
 ## About
 
-IMPULSES.ART is a professional music therapy initiative founded and directed by Ernesto Cisneros Cino, an internationally experienced pianist, composer, educator, and visual artist based in Miami, Florida. The project integrates live piano improvisation with evidence-based therapeutic methods drawn from psychology, neuroscience, and the expressive arts.
+IMPULSES.ART is a therapeutic music initiative founded and directed by Ernesto Cisneros Cino, an internationally experienced pianist, composer, educator, and visual artist based in Miami, Florida. The project integrates live piano improvisation with methods informed by published research in psychology, neuroscience, and the expressive arts.
 
 The project focuses on immigrant and refugee communities, creating safe spaces for emotional expression, trauma recovery, and cultural integration — while remaining open to anyone seeking therapeutic benefit through music.
 
@@ -22,7 +22,7 @@ The project focuses on immigrant and refugee communities, creating safe spaces f
 - Group Music Therapy Sessions: Collective healing through live piano improvisation and participatory dynamics
 - Individual Music Therapy Sessions: One-on-one personalized therapeutic work
 - Community Workshops: Specialized programs for organizations, schools, churches, and cultural centers
-- Virtual Sessions: Remote music therapy maintaining full quality and interactivity
+- Virtual Sessions: Remote therapeutic music sessions maintaining full quality and interactivity
 
 ## Research Foundation
 
