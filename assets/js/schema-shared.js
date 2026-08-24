@@ -8,7 +8,7 @@
       "@type": ["Organization", "ProfessionalService"],
       "@id": "https://impulses.online/#organization",
       "name": "IMPULSES.ART",
-      "alternateName": "IMPULSES ART Professional Music Therapy",
+      "alternateName": "IMPULSES ART Therapeutic Music",
       "url": "https://impulses.online",
       "logo": {
         "@type": "ImageObject",
@@ -16,7 +16,7 @@
         "width": 400,
         "height": 400
       },
-      "description": "Professional music therapy project combining live piano performance with scientific approaches to healing. Supporting immigrant and refugee communities in the United States.",
+      "description": "Therapeutic music project combining live piano performance with research-informed approaches to wellbeing. Supporting immigrant and refugee communities in the United States.",
       "founder": { "@id": "https://impulses.online/#person" },
       "areaServed": [
         {
@@ -34,12 +34,12 @@
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Music Therapy Services",
+        "name": "Therapeutic Music Services",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Individual Music Therapy" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Group Music Therapy" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Individual Therapeutic Music Sessions" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Group Therapeutic Music Sessions" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Community Workshops" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Virtual Therapy Sessions" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Virtual Therapeutic Music Sessions" } }
         ]
       },
       "knowsLanguage": ["en", "es"],
@@ -71,7 +71,7 @@
         "width": 400,
         "height": 400
       },
-      "jobTitle": ["Pianist", "Composer", "Educator", "Visual Artist", "Music Therapist"],
+      "jobTitle": ["Pianist", "Composer", "Educator", "Visual Artist"],
       "description": "Internationally experienced pianist, composer, educator, and visual artist. Founder and director of IMPULSES.ART professional music therapy project.",
       "knowsLanguage": ["en", "es"],
       "worksFor": { "@id": "https://impulses.online/#organization" },
@@ -92,7 +92,7 @@
       "url": "https://impulses.online",
       "publisher": { "@id": "https://impulses.online/#organization" },
       "inLanguage": "en",
-      "description": "Professional music therapy combining live piano performance with scientific approaches to healing.",
+      "description": "Therapeutic live piano: performance combined with research-informed approaches to wellbeing.",
       "potentialAction": {
         "@type": "SearchAction",
         "target": {

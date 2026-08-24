@@ -11,7 +11,7 @@ The project focuses on immigrant and refugee communities, creating safe spaces f
 ## Founder
 
 - Name: Ernesto Cisneros Cino
-- Roles: Pianist, Composer, Educator, Visual Artist, Music Therapist
+- Roles: Pianist, Composer, Educator, Visual Artist
 - Website: https://ernestocisneros.art
 - Email: ernestocisnerosmusic@gmail.com
 - Phone: +1-786-816-9791
@@ -19,8 +19,8 @@ The project focuses on immigrant and refugee communities, creating safe spaces f
 
 ## Services
 
-- Group Music Therapy Sessions: Collective healing through live piano improvisation and participatory dynamics
-- Individual Music Therapy Sessions: One-on-one personalized therapeutic work
+- Group Therapeutic Music Sessions: Collective healing through live piano improvisation and participatory dynamics
+- Individual Therapeutic Music Sessions: One-on-one personalized therapeutic work
 - Community Workshops: Specialized programs for organizations, schools, churches, and cultural centers
 - Virtual Sessions: Remote therapeutic music sessions maintaining full quality and interactivity
 
