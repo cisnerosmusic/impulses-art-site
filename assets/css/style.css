@@ -515,11 +515,11 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ── Photo backgrounds ── */
 .placeholder-portrait {
-  background: url('../images/portrait.jpg') center 15% / cover no-repeat;
+  background: url('../images/portrait.webp') center 15% / cover no-repeat;
 }
 
 .placeholder-piano {
-  background: url('../images/hands-dark.jpg') center center / cover no-repeat;
+  background: url('../images/hands-dark.webp') center center / cover no-repeat;
 }
 
 .placeholder-hands {
